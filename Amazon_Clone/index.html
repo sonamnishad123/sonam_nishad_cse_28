@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amazon Clone</title>
+    <style>
+        body {
+            margin: 0%;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+        .header {
+            width: auto;
+            background-color: #131921;
+            color: white;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .location {
+            font-size: 12px;
+            margin-right: 20px;
+        }
+        .search-area {
+            flex: 1;
+            display: flex;
+            max-width: 100%;
+        }
+        .search-box {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            outline: none;
+        }
+        .search-btn {
+            padding: 8px 12px;
+            background-color: #febd69;
+            border: none;
+            cursor: pointer;
+        }
+        .account {
+            font-size: 12px;
+            margin-left: 20px;
+        }
+        .nav {
+            width: 100%;
+            background-color: #232f3e;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 14px;
+        }
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+        .categories {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .category {
+            width: 200px;
+            text-decoration: none;
+            color: black;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .category img {
+            width: 100%;
+            height: 160px;
+        }
+        .category:hover {
+            border-color: #f0c14b;
+        }
+        .products {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: white;
+            width: 220px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: 80%;
+        }
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #b12704;
+            font-weight: bold;
+        }
+        .footer {
+            width: 100%;
+            background-color: #131921;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media screen and (max-width: 600px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .search-area {
+                margin-top: 10px;
+                width: 100%;
+            }
+            .account {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            .category,
+            .product {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="header-inner">
+        <div class="logo">amazon</div>
+        <div class="search-area">
+            <input type="text" class="search-box" placeholder="Search Amazon">
+            <button class="search-btn">Search</button>
+        </div>
+        <div class="account">
+            Hello, Sign in<br>
+            <b>Account & Lists</b>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="fruitnvegitable.html">Fruit & Vegitables</a>
+    <a href="electronics.html">Electronics</a>
+    <a href="fashion.html">Fashion</a>
+    <a href="homenkitchen.html">Home & Kitchen</a>
+</div>
+<div class="banner">
+    <img src="https://m.media-amazon.com/images/G/31/img20/AmazonLaunchpad/2022/Jupiter/phase2/gateway/phase4/Fashion--accessories_PC.jpg">
+</div>
+<div class="categories">
+    <a href="fruitnvegitable.html" class="category">
+        <img src="https://assets.aboutamazon.com/dims4/default/b0cc94c/2147483647/strip/true/crop/1279x720+0+0/resize/2480x1396!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2Ff5%2F9f%2F43fe106c4a5081e7a696ef0a8fa8%2Ffresh-1280x7201.jpg">
+        <h3>Fruit & Vegitables</h3>
+    </a>
+    <a href="electronics.html" class="category">
+        <img src="https://channelx.world/wp-content/uploads/2024/03/Amazon-Consumer-Electronics-shortened-Returns-window-shutterstock_738107467.jpg">
+        <h3>Electronics</h3>
+    </a>
+    <a href="fashion.html" class="category">
+        <img src="https://assets.aboutamazon.com/dims4/default/d7b943e/2147483647/strip/true/crop/5532x3114+0+287/resize/2480x1396!/format/webp/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F25%2F8e%2F5d7089c64db89a885fb9cd6b9a7f%2Faviv-rachmadian-7f7kehj72mq-unsplash.jpg">
+        <h3>Fashion</h3>
+    </a>
+    <a href="homenkitchen.html" class="category">
+        <img src="https://m.media-amazon.com/images/I/614I1HYPQsL.jpg">
+        <h3>Home & Kitchen</h3>
+    </a>
+</div>
+<div class="products">
+    <div class="product">
+        <img src="https://www.redragon.in/cdn/shop/files/Main_d733c563-7c27-4ed4-a778-c8860fdb26a5.png?v=1748945785&width=1000">
+        <h3>Wireless Mouse</h3>
+        <p>₹2499</p>
+    </div>
+    <div class="product">
+        <img src="https://24thspoke.in/cdn/shop/files/1723225434788.jpg?v=1723225463&width=1200">
+        <h3>Sweater</h3>
+        <p>₹299</p>
+    </div>
+    <div class="product">
+        <img src="https://www.electrolux.in/contentassets/5f8b4b50a99649cba7721d1efdbe6e26/imageypyy.png">
+        <h3>Fridge</h3>
+        <p>₹60,499</p>
+    </div>
+    <div class="product">
+        <img src="https://images-cdn.ubuy.co.in/66b62d92440d2e6a4f056876-women-shoes-ladies-fashion-open-toe.jpg">
+        <h3>High Heels Sandals</h3>
+        <p>₹699</p>
+    </div>
+</div>
+<div class="footer">
+    © 2025 Amazon Clone
+</div>
+</body>
+</html>
