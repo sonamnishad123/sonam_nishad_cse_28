@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+     <style>
+        form{
+            width:auto;
+            padding:auto;
+            margin:auto;
+        } 
+        label{
+            display:inline-block;
+            width:auto;
+            margin-bottom:auto;
+        }
+        input, select, textarea{
+            width:auto;
+            padding:auto;
+            margin-bottom:auto;
+
+        }
+    </style>
+    <form><h1><center>Student Registration Form</center></h1>
+        <hr>
+        <br>
+        <label for="name"><b>Full Name:</b></label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name"></input>
+        </br>
+
+
+        <br>
+        <label for="email"><b>Email:</b></label>
+        <input type="text" id="email" name="email" placeholder="Enter valid email address"></input>
+        </br>
+
+        <br>
+        <label for="password"><b>Password:</b>:</label>
+        <input type="text" id="password" name="password" placeholder="Enter password"></input>
+        </br>
+
+        <br>
+        <label for="gender"><b>Gender:</b></label>
+        <input type="radio" name="gender" value="male">Male</input>
+        <input type="radio" name="gender" value="Female">Female</input>
+        <input type="radio" name="gender" value="Others">Others</input>
+        </br>
+         <br>
+        <label for="course"><b>Course:</b></label>
+        <select id="course" name="eventdate">
+            <option value="">Select Course</option>
+            <option value="B.Tech">B.Tech</option>
+            
+            <option value="M.Tech">M.Tech</option>
+            <option value="MBA">MBA</option>
+        </select> 
+        </br>
+        <br>
+        <label for="contact"><b>Contact No.:</b></label>
+        <input type="text" id="contact" name="contact" placeholder="Enter phone number"></input>
+        </br>
+        <br>
+        <label for="address"><b>Address:</b></label><br/>
+        <textarea id="address" name="address" rows="4" cols="100" placeholder="Enter your address"></textarea>
+        </br>
+        <br>
+        <input type="button" value="Register"></input> 
+        <input type="button" value="clear"></input>
+        </br>
+        <hr>
+        <center>© 2025 Student Registration Portal</center>
+        <br>
+        <br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+</head>
+<style>
+    header {
+        background-color: #14e31a;
+        padding: 10px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(238, 7, 7);
+    }
+    .inline-block.menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+    }
+    .inline-block.menu ul li {
+        display: inline-block;
+    }
+    .inline-block.menu ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .inline-block.menu ul li a:hover {
+        background-color: #111;
+    }
+    .float-menu {
+        background-color: #5c90a0;
+    }
+    .float-menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .float-menu ul li {
+        float: left;
+    }
+    .float-menu ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .float-menu ul li a:hover {
+        background-color: rgb(8, 104, 237);
+    }
+    .clear {
+        clear: both;
+    }
+
+</style>
+<body>
+    <header>My Website Navigation</header>
+    <nav class="inline-block menu">
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Dashboard">Dashboard</a></li>
+        <li><a href="#Segments">Segments</a></li>
+        <li><a href="#Account">Account</a></li>
+        <li><a href="#Settings">Settings</a></li>
+    </ul>
+    </nav>
+    <nav class="float-menu">
+        <ul>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#about us">About Us</a></li>
+            <li><a href="#contact us">Contact Us</a></li>
+            <li><a href="#logout">Logout</a></li>
+            <li><a href="#help">Help</a></li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+    
+</body>
+</html>
